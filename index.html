@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ridho Hasbi Ashiddiq - Portfolio</title>
-    <meta name="description" content="Portfolio of Ridho Hasbi Ashiddiq, a Junior Web Programmer.">
+    <meta name="description"
+        content="Portfolio Ridho Hasbi Ashiddiq, Software Developer spesialis Laravel, Flutter, dan IoT.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
-    <!-- Lucide Icons (Professional Icons) -->
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Devicon for Tech Icons -->
@@ -29,21 +32,23 @@
             <a href="#" class="logo">&lt;ridho-jwp/&gt;</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
                 <i data-lucide="menu"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
@@ -55,18 +60,18 @@
     <section id="hero" class="hero">
         <div class="container hero-container">
             <div class="hero-content reveal">
-                <h2 class="greeting">Hello, I'm</h2>
+                <p class="greeting">Hello, I'm</p>
                 <h1 class="name gradient-text">Ridho Hasbi Ashiddiq</h1>
-                <h3 class="role">Junior Web Programmer</h3>
+                <h2 class="role">Software Developer</h2>
                 <p class="summary">
-                    Mahasiswa aktif semester 6 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Subang.
+                    Mahasiswa aktif semester 7 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Subang.
                     Berpengalaman dalam pengembangan sistem berbasis web menggunakan framework Laravel serta aplikasi
                     mobile melalui Flutter.
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="cv/CV_RIDHO_HASBI_JUNIOR_WEB_PROGRAMER.pdf" download class="btn btn-outline">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
@@ -80,7 +85,7 @@
                 <div class="image-wrapper">
                     <img src="images/foto_profile.png" alt="Ridho Hasbi Ashiddiq" id="profile-photo">
                 </div>
-                <!-- Elemen Dekorasi "Terminal Code" -->
+                <!-- Terminal Code Decoration -->
                 <div class="tech-badge">
                     <div class="tech-badge-header">
                         <span></span><span></span><span></span>
@@ -99,15 +104,19 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section bg-alt section-divider">
         <div class="container">
-            <h2 class="section-title reveal">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title reveal">About Me</h2>
+            </div>
             <div class="about-content reveal">
                 <div class="about-text">
                     <p>
-                        Saya memiliki spesialisasi dalam perancangan sistem Inventory Management dan E-commerce.
-                        Memiliki keinginan kuat untuk terus memperluas wawasan serta menguasai berbagai bahasa
-                        pemrograman maupun teknologi baru sesuai dengan kebutuhan industri.
+                        Software Developer dengan spesialisasi dalam pengembangan sistem <i>enterprise</i> dan manajemen
+                        operasional industri (seperti Inventory & Warehouse Management). Berpengalaman merancang
+                        arsitektur sistem yang scalable, efisien, dan terintegrasi—dari <i>backend services</i> hingga
+                        perangkat IoT—dengan komitmen untuk terus memberikan solusi teknologi inovatif sesuai standar
+                        industri modern.
                     </p>
                     <div class="info-list">
                         <div class="info-item">
@@ -116,7 +125,8 @@
                         </div>
                         <div class="info-item">
                             <i data-lucide="graduation-cap"></i>
-                            <span>D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Subang (IPK: 3.32)</span>
+                            <span>D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Subang (Semester 7 - IPK:
+                                3.32)</span>
                         </div>
                     </div>
                 </div>
@@ -125,13 +135,13 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <h4>Wakil Ketua Himpunan</h4>
-                        <h5>HIMATIKOM Polsub (2024 - 2025)</h5>
+                        <h5>HIMATI­KOM Polsub (2024 - 2025)</h5>
                         <p>Mengkoordinir internal organisasi dan manajemen administrasi antar departemen.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <h4>Anggota Departemen Relasi</h4>
-                        <h5>HIMATIKOM Polsub (2023 - 2024)</h5>
+                        <h5>HIMATI­KOM Polsub (2023 - 2024)</h5>
                         <p>Menjadi jembatan komunikasi antara Himpunan dengan pihak eksternal.</p>
                     </div>
                 </div>
@@ -139,14 +149,41 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section bg-alt">
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title reveal">My Skills</h2>
-            <h3 class="subsection-title reveal"
-                style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: var(--text-secondary);">Tech
-                Stack</h3>
-            <div class="tech-grid reveal">
+            <h2 class="section-title reveal">Work Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card reveal">
+                    <div class="experience-date">Jul 2026 — Present</div>
+                    <div class="experience-details">
+                        <h3>Software Development Intern</h3>
+                        <h4>PT. Tatametal Lestari</h4>
+                        <p>
+                            Pengembangan Sistem Informasi Manajemen Operasional Warehouse. Merancang dan
+                            mengimplementasikan modul-modul sistem berbasis web untuk mengelola kapasitas, rekap
+                            produksi, dan verifikasi data gudang.
+                        </p>
+                        <div class="experience-tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt section-divider">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Skills</h2>
+            </div>
+            <h3 class="subsection-title reveal">Tech Stack</h3>
+            <div class="tech-grid reveal stagger-children">
                 <div class="tech-card">
                     <i class="devicon-laravel-original colored"></i>
                     <span>Laravel</span>
@@ -180,7 +217,7 @@
                     <span>ESP32 / IoT</span>
                 </div>
                 <div class="tech-card">
-                    <i class="devicon-github-original" style="color: #ffffff;"></i>
+                    <i class="devicon-github-original" style="color: #f0edf7;"></i>
                     <span>GitHub</span>
                 </div>
                 <div class="tech-card">
@@ -189,10 +226,8 @@
                 </div>
             </div>
 
-            <h3 class="subsection-title reveal"
-                style="text-align: center; margin: 4rem 0 2rem; font-size: 1.5rem; color: var(--text-secondary);">Skill
-                Categories</h3>
-            <div class="skills-grid reveal">
+            <h3 class="subsection-title subsection-title-spaced reveal">Skill Categories</h3>
+            <div class="skills-grid reveal stagger-children">
                 <div class="skill-category">
                     <div class="skill-header">
                         <i data-lucide="code-2"></i>
@@ -252,9 +287,8 @@
 
                 <!-- Project 1 -->
                 <div class="project-card reveal">
-                    <div class="project-img dzagira-placeholder">
-                        <i data-lucide="terminal-square"></i>
-                        <span>DZAGYRA STEAM</span>
+                    <div class="project-img">
+                        <img src="images/dzagyra_steam.jpg" alt="Dzagira Steam - Sistem Pencatatan Transaksi">
                     </div>
                     <div class="project-info">
                         <h3>Dzagira Steam</h3>
@@ -264,8 +298,8 @@
                             <span>PHP Native</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ridho-jwp/Dzagyra-Steam.git" target="_blank" class="link-btn"><i
-                                    data-lucide="github"></i> Code</a>
+                            <a href="https://github.com/ridho-jwp/Dzagyra-Steam.git" target="_blank"
+                                rel="noopener noreferrer" class="link-btn"><i data-lucide="github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +307,7 @@
                 <!-- Project 2 -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="images/mooz_order.png" alt="Mooz Order">
+                        <img src="images/mooz_order.jpg" alt="Mooz Order - Aplikasi Pemesanan Makanan">
                     </div>
                     <div class="project-info">
                         <h3>Mooz Order</h3>
@@ -283,8 +317,8 @@
                             <span>PHP</span><span>Laravel</span><span>JavaScript</span><span>React Native</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ridho-jwp/Mooz-Order.git" target="_blank" class="link-btn"><i
-                                    data-lucide="github"></i> Code</a>
+                            <a href="https://github.com/ridho-jwp/Mooz-Order.git" target="_blank"
+                                rel="noopener noreferrer" class="link-btn"><i data-lucide="github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -292,7 +326,7 @@
                 <!-- Project 3 -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="images/slemn24.png" alt="Slemn24 Store">
+                        <img src="images/slemn24.jpg" alt="Slemn24 Store - E-Commerce App">
                     </div>
                     <div class="project-info">
                         <h3>Slemn24 Store APP</h3>
@@ -303,7 +337,7 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/ridho-jwp/Slemn24-Mobile.git" target="_blank"
-                                class="link-btn"><i data-lucide="github"></i> Code</a>
+                                rel="noopener noreferrer" class="link-btn"><i data-lucide="github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +345,7 @@
                 <!-- Project 4 -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="images/smart_tfarm.png" alt="Smart IoT T-Farm">
+                        <img src="images/smart_tfarm.png" alt="Smart IoT T-Farm - Monitoring Pertanian">
                     </div>
                     <div class="project-info">
                         <h3>Smart IoT T-Farm</h3>
@@ -321,8 +355,8 @@
                             <span>PHP</span><span>Laravel</span><span>IoT</span><span>ESP32</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ridho-jwp/Smart_Tfarm.git" target="_blank" class="link-btn"><i
-                                    data-lucide="github"></i> Code</a>
+                            <a href="https://github.com/ridho-jwp/Smart_Tfarm.git" target="_blank"
+                                rel="noopener noreferrer" class="link-btn"><i data-lucide="github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -332,13 +366,15 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications section bg-alt">
+    <section id="certifications" class="certifications section bg-alt section-divider">
         <div class="container">
-            <h2 class="section-title reveal">Certifications</h2>
-            <div class="cert-grid">
+            <div class="section-header">
+                <h2 class="section-title reveal">Certifications</h2>
+            </div>
+            <div class="cert-grid reveal stagger-children">
 
                 <!-- Cert 1 -->
-                <div class="cert-card reveal">
+                <div class="cert-card">
                     <div class="cert-icon">
                         <i data-lucide="award"></i>
                     </div>
@@ -346,12 +382,13 @@
                         <h3>Junior Web Programing</h3>
                         <p>BNSP - LSP TIK Indonesia</p>
                         <a href="https://drive.google.com/file/d/1ulPleYcmToOUee3kl29Yw3e_wwquiPeQ/view?usp=sharing"
-                            target="_blank" class="cert-link">Lihat Sertifikat <i data-lucide="arrow-right"></i></a>
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Lihat Sertifikat <i
+                                data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Cert 2 -->
-                <div class="cert-card reveal">
+                <div class="cert-card">
                     <div class="cert-icon">
                         <i data-lucide="shield-check"></i>
                     </div>
@@ -359,12 +396,13 @@
                         <h3>Computer and Network Engineer</h3>
                         <p>BNSP - SMKN 4 PADALARANG</p>
                         <a href="https://drive.google.com/file/d/1wg-mJjsq3fkgrqqlFA120i2n8lVlkyr-/view?usp=sharing"
-                            target="_blank" class="cert-link">Lihat Sertifikat <i data-lucide="arrow-right"></i></a>
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Lihat Sertifikat <i
+                                data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Cert 3 -->
-                <div class="cert-card reveal">
+                <div class="cert-card">
                     <div class="cert-icon">
                         <i data-lucide="wifi"></i>
                     </div>
@@ -372,7 +410,8 @@
                         <h3>MTCNA MikroTik</h3>
                         <p>MIKROTIK</p>
                         <a href="https://drive.google.com/file/d/1wOoo9BLFgK8g0wX79wE_IuUaAUkkIYvC/view?usp=sharing"
-                            target="_blank" class="cert-link">Lihat Sertifikat <i data-lucide="arrow-right"></i></a>
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Lihat Sertifikat <i
+                                data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -383,7 +422,9 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section">
         <div class="container">
-            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="section-header">
+                <h2 class="section-title reveal">Get In Touch</h2>
+            </div>
             <div class="contact-content reveal">
                 <p class="contact-text">
                     Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya melalui
@@ -391,8 +432,9 @@
                 </p>
 
                 <div class="social-links">
-                    <a href="https://github.com/ridho-jwp" target="_blank" class="social-btn" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    <a href="https://github.com/ridho-jwp" target="_blank" rel="noopener noreferrer" class="social-btn"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4">
@@ -400,8 +442,8 @@
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/ridho-hasbi-ashiddiq-355bb9293/" target="_blank"
-                        class="social-btn" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                             </path>
@@ -409,9 +451,9 @@
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/_ridhohasbi/" target="_blank" class="social-btn"
-                        aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    <a href="https://www.instagram.com/_ridhohasbi/" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -419,15 +461,16 @@
                         </svg>
                     </a>
                     <a href="mailto:ridhohasbi18@gmail.com" class="social-btn" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                             </path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                     </a>
-                    <a href="https://wa.me/6285183410241" target="_blank" class="social-btn" aria-label="WhatsApp">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    <a href="https://wa.me/6285183410241" target="_blank" rel="noopener noreferrer" class="social-btn"
+                        aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
